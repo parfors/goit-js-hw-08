@@ -1,0 +1,2 @@
+var refs={form:document.querySelector(".feedback-form")},inputData={};function checkLocalStorage(){refs.form.email.value="5",console.log(refs.form.email.value)}function handlerInput(e){console.log(e.target.value),inputData[e.target.name]=e.target.value,localStorage.setItem("feedback-form-state",JSON.stringify(inputData))}refs.form.addEventListener("input",handlerInput),checkLocalStorage();
+//# sourceMappingURL=03-feedback.d09520bc.js.map
