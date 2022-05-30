@@ -21,7 +21,6 @@ const galleryMarkup = obj => {
 
 refs.gallery.insertAdjacentHTML('beforeend', galleryMarkup(galleryItems));
 
-// new SimpleLightbox('.gallery a', {  captionDelay: 250,});
 let lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   overlayOpacity: 0.6,
