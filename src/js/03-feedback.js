@@ -27,7 +27,6 @@ function handlerSubmit(event) {
   const isValid = [...event.target.elements]
     .filter(el => el.nodeName === 'INPUT' || el.nodeName === 'TEXTAREA')
     .every(el => el.value !== '');
-  console.log(isValid);
   if (isValid) {
     console.log(JSON.parse(localStorage.getItem('feedback-form-state')));
     localStorage.clear();
